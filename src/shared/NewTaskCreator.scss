@@ -1,0 +1,29 @@
+.task-creator {
+    max-width: 22rem;
+    border: 1px solid gray;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+  }
+  
+  .task-creator-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .task-creator-left {
+    grid-column: 1;
+  }
+  
+  .task-creator-right {
+    grid-column: 2;
+    justify-self: end;
+  }
+  
+  .task-creator-right input {
+    min-width: 15rem;
+  }
+  
+  .task-creator-item-container {
+    margin-bottom: 0.4rem;
+  }
+  
