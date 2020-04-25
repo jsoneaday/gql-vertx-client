@@ -14,7 +14,7 @@ const TasksGenerator = ({taskList}: TasksGeneratorProp) => {
             const currentTasks = [];
             for(let t = 0; t < taskList.length; t++) {
                 const currentTask = taskList[t];
-                console.log(currentTask);
+                
                 currentTasks.push(
                     <Task
                         key={currentTask.id}

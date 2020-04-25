@@ -18,18 +18,15 @@ function App() {
   const [taskList, setTaskList] = useState<Array<TaskModel> | null>(null);
 
   useEffect(() => {
-    if(taskResult && taskResult.data && taskResult.data.getTasks) {
+    if(taskResult?.data?.getTasks) {
       setTaskList(taskResult.data.getTasks);
     }
   }, [taskResult, taskResult.data]);
 
   useEffect(() => {
-    if(!userResult || !userResult.data) return;
-
-    if (userResult && userResult.data && userResult.data.getUser) {
+    if (userResult?.data?.getUser) {
       setGreeting(`Hello, ${userResult.data.getUser.name}`)
     }
-
   }, [userResult, userResult.data]);
 
   return (
