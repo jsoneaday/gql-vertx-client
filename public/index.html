@@ -25,6 +25,13 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script src="kotlin.js"></script>
+    <script src="gql-shared.js"></script>
+    <script>
+      window.DzHaven = this.window["gql-shared"].com.dzhaven.gql.shared;
+      window.DzHaven.printMe = window.DzHaven.printMe_61zpoe$;
+      window.DzHaven.printMe("test printMe")
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

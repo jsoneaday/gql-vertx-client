@@ -3,14 +3,14 @@ import NavBar from "./shared/NavBar";
 import "./App.scss";
 import { useQuery } from '@apollo/react-hooks';
 import { GetUser, GetTasks } from './shared/Queries';
-import TaskModel from './shared/models/TaskModel';
+import { TaskModel } from './shared/models/TaskModel';
 import TasksGenerator from './shared/TasksGenerator';
 import NewTaskCreator from './shared/NewTaskCreator';
 
 function App() {
   const userResult = useQuery(GetUser, {
     variables: {
-      id: 5
+      id: 2
     }
   });  
   const [greeting, setGreeting] = useState("");

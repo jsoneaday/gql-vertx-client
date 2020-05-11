@@ -1,5 +1,5 @@
 import React, { useEffect, useState, ReactElement } from "react";
-import TaskModel from "./models/TaskModel";
+import { TaskModel } from "./models/TaskModel";
 import Task from "./Task";
 
 interface TasksGeneratorProp {
